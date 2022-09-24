@@ -39,6 +39,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 1.3em;
 }
 
 #botao-escuro{
@@ -115,7 +116,7 @@ main{
     padding: 0px 80px;
 }
 
-section{
+.campo-lista{
     background-color: white;
     max-width: 800px;
     width: 100%;
@@ -136,11 +137,11 @@ article{
     flex-direction: column;
 }
 
-section div{
+.campo-lista div{
     max-width: 700px;
 }
 
-section input,p{
+.campo-lista input,p{
     display: inline-block;
     margin: 8px;
     font-size: 1.5em;

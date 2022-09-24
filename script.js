@@ -64,7 +64,7 @@ let botaoEscuro = document.getElementById('botao-escuro')
 let imagemTitulo = document.getElementById('img-titulo')
 let textTitulo = document.getElementById('titulo')
 let header = document.getElementsByTagName('header')
-let section = document.getElementsByTagName('section')
+let section = document.querySelector('.campo-lista')
 let botaoAdd = document.querySelector('#botao-adicionar')
 
 function temaEscuro(){
@@ -73,7 +73,7 @@ function temaEscuro(){
     header[0].style.backgroundColor = 'var(--headerEscuro)'
     document.body.style.backgroundColor = 'var(--fundoEscuro)'
     document.body.style.color = 'white'
-    section[0].style.backgroundColor = 'var(--ListEscuro)'
+    section.style.backgroundColor = 'var(--ListEscuro)'
     botaoAdd.style.backgroundColor = 'var(--ListEscuro)'
     botaoEscuro.style.border = '2px solid white'
     botaoEscuro.style.boxShadow = '0px 0px 15px white'
@@ -85,7 +85,7 @@ function temaClaro(){
     header[0].style.backgroundColor = 'var(--headerClaro)'
     document.body.style.backgroundColor = 'var(--fundoClaro)'
     document.body.style.color = 'Black'
-    section[0].style.backgroundColor = 'white'
+    section.style.backgroundColor = 'white'
     botaoAdd.style.backgroundColor = 'var(--botaoClaro)'
     botaoClaro.style.border = '2px solid black'
     botaoClaro.style.boxShadow = '0px 0px 12px rgba(0, 0, 0, 0.559)'
