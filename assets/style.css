@@ -162,7 +162,6 @@ section input,p{
     margin: 7px;
     display: flex;
     align-items: center;
-    padding: 0px 80px;
 }
 
 .campo-tarefa p{
@@ -185,4 +184,9 @@ section input,p{
     main{
         padding: 0px 35px;
     }
+
+    .campo-tarefa p{
+        font-size: 1.2em;
+    }
+    
 }
