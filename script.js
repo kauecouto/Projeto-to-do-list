@@ -35,25 +35,24 @@ function adicionaTarefa() {
 }
 
 function riscaTarefa(classe, i){
+    let tarefa = document.querySelectorAll(`.${classe}`)
     if(checkbox[i].checked){
-        let tarefa = document.querySelectorAll(`.${classe}`)
         if(tarefa[i]){
             tarefa[i].style.textDecoration = 'line-through'
             tarefa[i].style.opacity = '0.5'
         }else{
-         tarefa = document.querySelector(`.${classe}`)
-        tarefa.style.textDecoration = 'line-through'
-        tarefa.style.opacity = '0.5'
+            tarefa = document.querySelector(`.${classe}`)
+            tarefa.style.textDecoration = 'line-through'
+            tarefa.style.opacity = '0.5'
         }
     }else{
-        let tarefa = document.querySelectorAll(`.${classe}`)
         if(tarefa[i]){
             tarefa[i].style.textDecoration = 'none'
             tarefa[i].style.opacity = '1'
         }else{
-         tarefa = document.querySelector(`.${classe}`)
-        tarefa.style.textDecoration = 'none'
-        tarefa.style.opacity = '1'
+            tarefa = document.querySelector(`.${classe}`)
+            tarefa.style.textDecoration = 'none'
+            tarefa.style.opacity = '1'
         }
     }
     
