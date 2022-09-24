@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap');
+
+:root{
+    --fundoEscuro: #414141;
+    --headerEscuro: #252525;
+    --ListEscuro: #B1B1B1;
+    --fundoClaro: #ECECEC;
+    --headerClaro: #F5F5F5;
+    --botaoClaro: #4A6878;
+}
+
+*{
+    margin: 0%;
+}
+
+body{
+    background-color: var(--fundoClaro);
+    font-family: 'Inter', sans-serif;
+}
+
+header{
+    background-color: var(--headerClaro);
+    text-align: center;
+    padding: 50px 30px;
+    padding-top: 18px;
+    box-shadow: 0px -58px 42px 55px rgba(0, 0, 0, 0.067);
+}
+
+#img-titulo{
+    margin-right: 15px;
+}
+
+.campo-tema{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.campo-titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#botao-escuro{
+    background-color: #434343;
+    color: white;
+    width: 30px;
+    height: 30px;
+    font-weight: bold;
+    border-radius: 100px;
+    box-shadow: inset 0.2px 0.2px 12px rgba(255, 255, 255, 0.449);
+    border: 1px solid rgba(0, 0, 0, 0.555) ;
+    margin: 10px;
+}
+
+#botao-escuro:active{
+    background-color: #000000;
+}
+
+#botao-claro{
+    background-color: var(--fundoClaro);
+    color: white;
+    width: 30px;
+    height: 30px;
+    font-weight: bold;
+    padding: 6px 8px;
+    border-radius: 100px;
+    box-shadow: inset 0.2px 0.2px 12px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.555) ;
+    margin: 10px;
+}
+
+#botao-claro:active{
+    background-color: #ffffff;
+}
+
+#alerta{
+    position: relative;
+    top: 15px;
+    text-align: center;
+    font-size: 0.9em;
+    color: rgb(195, 2, 2);
+    display: none;
+}
+
+#input-tarefa{
+    padding: 10px;
+    margin-right: 25px;
+    max-width: 300px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    box-shadow: inset 0px 0px 6px 1px rgba(0, 0, 0, 0.222);
+}
+
+#botao-adicionar{
+    background-color: var(--botaoClaro);
+    color: white;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 1.0em;
+    padding: 9px 13px;
+    border-radius: 5px;
+    border: none;
+}
+
+#botao-adicionar:active{
+    background-color: #32444e;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 80px;
+}
+
+section{
+    background-color: white;
+    max-width: 800px;
+    width: 100%;
+    min-height: 350px;
+    padding: 30px;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0px 0px 50px 50px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.259);
+    margin-bottom: 20px;
+}
+
+article{
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+section div{
+    max-width: 700px;
+}
+
+section input,p{
+    display: inline-block;
+    margin: 8px;
+    font-size: 1.5em;
+}
+
+.checkbox{
+    width: 22px;
+    height: 22px;
+    margin: 0px 10px;
+    accent-color:  #a5f8c8;
+}
+
+.campo-tarefa{
+    margin: 7px;
+    display: flex;
+    align-items: center;
+}
+
+.campo-tarefa p{
+    line-height: 30px;
+    margin: 0%;
+}
+
+@media (max-width: 530px) {
+    #input-tarefa{
+        margin: 0%;
+    }
+
+    #img-titulo{
+        margin: 0%;
+    }
+
+    .form{
+        padding-top: 15px;
+    }
+}

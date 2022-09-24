@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="campo-tema">
+            <input type="button" value="" id="botao-escuro" >
+            <input type="button" value="" id="botao-claro" onclick="temaClaro()">
+        </div>
+        <div class="campo-titulo">
+            <img src="assets/imagens/imagem-lista-tema-claro.png" alt="imagem-lista" id="img-titulo">
+            <h1 id="titulo">Lista de Tarefas</h1>
+        </div>
+        <div>
+            <p id="alerta">Preencha o campo corretamente!</p>
+            <div class="form">
+                <input type="text" name="tarefa" id="input-tarefa" placeholder="Digite a sua tarefa...">
+                <input type="button" value="Adicionar" id="botao-adicionar" onclick="adicionaTarefa()">
+            </div>
+            
+        </div> 
+    </header>
+    <main>
+        <section>
+            <article id="lista">
+                <p id="aviso">Adicione uma Tarefa...</p>
+            </article>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
