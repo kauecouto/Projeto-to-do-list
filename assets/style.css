@@ -146,6 +146,11 @@ section input,p{
     font-size: 1.5em;
 }
 
+#lista{
+    display: flex;
+    justify-content: center;
+}
+
 .checkbox{
     width: 22px;
     height: 22px;
@@ -157,10 +162,10 @@ section input,p{
     margin: 7px;
     display: flex;
     align-items: center;
+    padding: 0px 80px;
 }
 
 .campo-tarefa p{
-    line-height: 30px;
     margin: 0%;
 }
 
