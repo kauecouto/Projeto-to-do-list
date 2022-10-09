@@ -10,18 +10,17 @@
 <body>
     <header class="header">
         <section class="campo-tema">
-            <input type="button" value="" id="botao-escuro" >
-            <input type="button" value="" id="botao-claro" onclick="temaClaro()">
+            <img src="./assets/imagens/tema-claro.svg" class="tema claro"  id="botao-tema" alt="" onclick="trocarTema()">
         </section>
         <section class="campo-titulo">
-            <img src="assets/imagens/imagem-lista-tema-claro.png" alt="imagem-lista" id="img-titulo">
+            <img src="assets/imagens/imagem-lista-tema-claro.png"  alt="imagem-lista" id="img-titulo">
             <h1 id="titulo">Lista de Tarefas</h1>
         </section>
         <section>
             <p id="alerta">Preencha o campo corretamente!</p>
             <div class="form">
-                <input type="text" name="tarefa" id="input-tarefa" placeholder="Digite a sua tarefa..." maxlength="24">
-                <input type="button" value="Adicionar" id="botao-adicionar" onclick="adicionaTarefa()">
+                <input type="text" name="tarefa" id="input-tarefa" placeholder="Digite a sua tarefa..." maxlength="24" >
+                <input type="button" value="Adicionar" id="botao-adicionar">
             </div>
         </section> 
     </header>
@@ -32,6 +31,8 @@
             </article>
         </section>
     </main>
-    <script src="script.js"></script>
+    <script src="assets/js/modo.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/tarefa.js"></script>
 </body>
 </html>

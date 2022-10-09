@@ -21,8 +21,8 @@ body{
 header{
     background-color: var(--headerClaro);
     text-align: center;
-    padding: 50px 30px;
-    padding-top: 18px;
+    padding: 60px 30px;
+    padding-top: 45px;
     box-shadow: 0px -58px 42px 55px rgba(0, 0, 0, 0.067);
 }
 
@@ -39,7 +39,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.3em;
+    font-size: 1rem;
 }
 
 #botao-escuro{
@@ -74,6 +74,40 @@ header{
 #botao-claro:active{
     background-color: #ffffff;
 }
+
+ .tema{
+    width: 2.0rem;
+
+}
+
+.escuro, .claro {
+    transform: translate(-10px);
+    animation: antes 0.5s ;
+    animation-fill-mode: forwards;
+}
+
+.escuro:active, .claro:active {
+    animation: depois 0.5s ;
+}
+
+@keyframes antes {
+    from{
+        opacity: 0;
+    }
+    to{
+        transform: translate(0px);
+    }
+}
+
+@keyframes depois {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+        transform: translateX(10px);
+    }
+} 
 
 #alerta{
     position: relative;
@@ -118,8 +152,8 @@ main{
 
 .campo-lista{
     background-color: white;
-    max-width: 800px;
-    width: 100%;
+    max-width: 700px;
+    width: 80vw;
     min-height: 350px;
     padding: 30px;
     padding-top: 60px;
@@ -150,12 +184,13 @@ article{
 #lista{
     display: flex;
     justify-content: center;
+    box-sizing: border-box;
 }
 
 .checkbox{
     width: 22px;
     height: 22px;
-    margin: 0px 10px;
+    margin: 0px 8px;
     accent-color:  #a5f8c8;
 }
 
@@ -166,7 +201,12 @@ article{
 }
 
 .campo-tarefa p{
-    margin: 0%;
+    margin: 0.1;
+}
+
+.lixeira{
+    width: 1.2rem;
+    margin: 0px 0.2rem;
 }
 
 @media (max-width: 530px) {
