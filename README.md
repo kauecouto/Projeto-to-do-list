@@ -4,4 +4,4 @@
 GitHub Pages: https://kauecouto.github.io/Projeto-to-do-list/
 <br>
 <br>
-<img src="assets/imagens/preview.gif" alt="gif-demostração">
+<img src="assets/imagens/preview-to-do-list.gif" alt="gif-demostração">
