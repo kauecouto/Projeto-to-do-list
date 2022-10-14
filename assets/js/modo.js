@@ -9,10 +9,8 @@ const trocarTema = () => {
     if(buttonTema.className == 'tema claro'){
         buttonTema.src = imagemButton.escuro
         buttonTema.className = 'tema escuro'
-        console.log('entrou no primeiro')
         tema()
     }else{
-        console.log('passou direto')
         buttonTema.src = imagemButton.claro
         buttonTema.className = 'tema claro'
         tema()

@@ -21,7 +21,7 @@ class Tarefa{
             aviso.style.display = 'none'
             let novaTarefa = `
                 <div class="campo-tarefa ${this.index}">
-                    <img src="assets/imagens/lixeira.svg" class="lixeira" alt="lixeira" onclick="deletaTarefa(${this.index})">
+                    <img src="assets/imagens/lixeira.svg" class="lixeira" alt="lixeira" onclick="deletaTarefa('${this.conteudo}',${this.index})">
                     <input type="checkbox" class="checkbox" id="checkbox${this.index}" onclick="riscaTarefa('${classTarefa}', ${this.index})">
                     <p id="${classTarefa}${this.index}">${this.conteudo}</p>
                 </div>
@@ -30,5 +30,4 @@ class Tarefa{
             lista.innerHTML += novaTarefa
         }
     }
-
 }

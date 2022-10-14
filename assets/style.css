@@ -204,6 +204,16 @@ article{
     margin: 0.1;
 }
 
+.checked{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.not-checked{
+    text-decoration: none;
+    opacity: 1;
+}
+
 .lixeira{
     width: 1.2rem;
     margin: 0px 0.2rem;
