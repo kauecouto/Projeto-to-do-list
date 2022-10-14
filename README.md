@@ -1,5 +1,5 @@
 # To-do-list
- Projeto to-do list, para poder praticar a interação com o DOM.
+ Projeto to-do list, para poder praticar a interação com o DOM e localStorage.
 <br>
 GitHub Pages: https://kauecouto.github.io/Projeto-to-do-list/
 <br>
