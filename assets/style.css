@@ -217,6 +217,11 @@ article{
 .lixeira{
     width: 1.2rem;
     margin: 0px 0.2rem;
+    transition: 0.1s;
+}
+
+.lixeira:hover{
+    transform: scale(1.1);
 }
 
 @media (max-width: 530px) {
